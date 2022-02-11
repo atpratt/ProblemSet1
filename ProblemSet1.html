@@ -1,51 +1,30 @@
 <!-- 
     COMP 333: Software Engineering
-    Sebastian Zimmeck (szimmeck@wesleyan.edu)
+    Andrew Pratt and Wislon Mcloy
+    Problem Set 1
 -->
 
 <!--
-    You can use this file as a starting point for any HTML page that you want to
-    create.
-    
-    This is a comment. Comments will not be displayed in the browser. A comment 
-    can go over one or multiple lines.
-
     Use the !DOCTYPE declaration to explicitly tell the browser receiving this 
-    file that it is an HMTL file. A DOCTYPE associates a particular document
-    with a document type definition (DTD), for example, the formal definition of
-    a particular version of HTML 2.0 - 4.0. The HTML layout engines in modern 
-    web browsers perform DOCTYPE "sniffing" or "switching", wherein the DOCTYPE 
-    in a document determines a layout mode, such as "quirks mode" (for 
-    compatibility) or "standards mode" (for compliance with current standards). 
-    The DOCTYPE is retained in HTML5 as a "mostly useless, but required" header 
-    only to trigger "standards mode" in common browsers.
+    file that it is an HMTL file. 
 -->
 <!DOCTYPE HTML>
+
 <!--
     After the DOCTYPE, the html document begins as is indicated by the html 
-    root element. You can think of your entire html document as a tree and 
-    the html element as the root from which everything else sprouts.
-    
-    The language attribute is used by web search engines to display search 
-    results in a particular language. E.g. if you are using Google in the US, 
-    you will not see many French pages returned in your results.
+    root element. 
 -->
 <html lang="en">
+
 <!-- 
     The head section has all the meta information, i.e., information about our 
     website that will not be displayed to the user. It tells browsers and search 
     engines basic information about the page such as the title, the charset, etc.
 -->
 <head>
-    <!--
-        No end tag is required for meta and link elements. That is the case 
-        because they are non-XHTML tags. Help the browser understand what 
-        characters to render by specifying a character set.
-    -->
     <meta charset="utf-8">
     <!--
-        Users may view your site on a desktop or mobile browser. There is even 
-        the trend of mobile first. The viewport takes care of this for us.
+        Users may view your site on a desktop or mobile browser. The viewport takes care of this for us.
     -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -54,33 +33,7 @@
         visible to the user in the tab in which the site is opened. Titles 
         should be unique.
     -->
-    <title>COMP 333: Software Engineering</title>
-    <!--
-        You could apply CSS styles in-line, i.e., in your HTML files, as follows:
-
-        <style>
-            p{color:red;}
-        </style>
-
-        This style would turn all font in paragraphs red. Generally, it is a 
-        good idea to use a dedicated Style Sheet to have all styles 
-        systematically in one place and not duplicate those. Include a link as 
-        below in any HTML page where you want to use styles from your Style 
-        Sheet.
-
-        You can have multiple Style Sheets; the browser would use all.
-
-        Just as CSS styles, you can also include JavaScript code in-line in your
-        HTML files using the <script> and </script? opening and closing tags.
-        Place CSS styles/links in the header and JavaScript code/links before the 
-        closing </body> tag. The reason for having Style Sheets in the header is
-        that otherwise browsers would need to reflow the layout while the user 
-        is trying to interact with the page. If you would not have JavaScript 
-        at the end, browsers in some cases would have to block processing 
-        the HTML while JavaScript code is still being loaded.
-        https://stackoverflow.com/questions/6625773/where-should-i-put-the-css-and-javascript-code-in-an-html-webpage
-        https://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup/24070373#24070373
-    -->
+    <title>Music Rating Platform</title>
     <link rel="stylesheet" href="style_sample.css">
 </head>
  
@@ -89,46 +42,26 @@
     the structure of your page.
 -->
 <body>
-    <!-- 
-        Everything between two tags, including the tags, is an element. Headings
-        come in six different sizes: <h1></h1> to <h6></h6>. Note that 
-        it is not possible to autonumber headings in HTML. You would need to 
-        write such functionality yourself.
-     -->
-    <h1>HTML and CSS Samples</h1>
-    <h2>1. Basics</h2>
-    <p>This is a paragraph.</p>
-    <!--
-        The <br> tag will cause a line break. It is self-closing.
-    -->
-    <p>This is paragraph<br>with a line break.</p>
-    <hr><p>This is paragraph with a horizontal rule on top.</p>
+    <h1>Music Rating Platform</h1>
+    <h2>1. Rating Songs</h2>
+    <hr><p>Select or Enter a song of choice </p> <!--This is paragraph with a horizontal rule on top-->
+    <p>Hot Songs Right Now!<br>Song Selection</p> <!--The <br> tag will cause a line break. It is self-closing.-->
+
     <!--
         Additional items, such as style below, are attributes of an elment. The
         style code is our first example of CSS and how we can use it together 
         with HTML. We can also use style outside of the p tags, in which case it 
         would apply to the whole site.
     -->
-    <p style="background:lightblue;">And here is another paragraph with 
-        CSS background styling.</p>
-    <!--
-        You can style your site without using CSS just with HTML. Here are some 
-        examples.
-    -->
+    <p style="background:lightblue;">Share Songs with Friends</p>
+    <!-- You can style your site without using CSS just with HTML. Here are some examples.-->
     <small>Small text.</small><br>
     <mark>Marked text.</mark><br>
     <del>Crossed out text.</del><br>
     A <sub>subscript</sub><br>
     A <sup>superscript</sup><br>
-    <!-- 
-        Underlined text may be confused with links. So, use it sparingly.
-    -->
     <u>Underlined text.</u><br>
     <i>Text in italics.</i><br>
-    <!--
-        Note the difference between the strong and bold tags. They look the 
-        same but have different meaning.
-    -->
     <b>Bold text is just a style.</b><br>
     <strong>Strong text means that the content here is important.</strong>
     <br>
@@ -139,12 +72,10 @@
     will will not be recognized by the browser as quotes."<br>
     <blockquote>For longer text you can use blockquotes,
         which will be indented.</blockquote>
-    <!--
-        Just as for the bold and strong tags, italics and cited text looks 
-        the same but have a different meaning when browsers and search 
-        engines enounter it.
-    -->
     <cite>Cited text.</cite>
+
+
+
     <h2>2. Character Entity References</h2>
     <p>
         Certain characters cannot be directly displayed in HTML because they are 
