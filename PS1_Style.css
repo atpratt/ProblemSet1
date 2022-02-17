@@ -97,12 +97,14 @@ a:hover {
 
 
 
-/* Style based on class*/
+/* Style based on class
+for multiple things*/
 .Green {
     background-color: green;
 }
 
-/* Style based on id */
+/* Style based on id 
+for one thing*/
 #Red-Outline {
     border: 5px solid red;
 }
